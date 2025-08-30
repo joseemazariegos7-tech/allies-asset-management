@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0B0B;
+  --text: #FFFFFF;
+  --gold: #D4AF37;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn {
+  @apply inline-block px-5 py-3 rounded-xl border transition;
+}
+.btn-gold-outline {
+  @apply border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-black;
+}
+.btn-gold-solid {
+  @apply bg-[var(--gold)] text-black border border-[var(--gold)] hover:opacity-90;
+}
+
+.card {
+  @apply rounded-2xl p-6 border border-yellow-600/30 bg-black/40 shadow;
+}
+
+.table {
+  @apply w-full border-collapse;
+}
+.table th, .table td {
+  @apply border border-yellow-700/30 p-3 text-sm;
+}
+.table th {
+  @apply text-left text-[var(--gold)];
+}
+.table thead {
+  @apply bg-black/40;
+}

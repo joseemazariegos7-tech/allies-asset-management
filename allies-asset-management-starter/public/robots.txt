@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alliesassetmanagement.com/sitemap.xml
